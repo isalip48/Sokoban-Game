@@ -22,32 +22,38 @@ public class GameSkeleton extends JPanel{
     int currentLevel = 01;
     
     GameCoding [][] gameArray;
-    private char [][] level01 = {{'w', 'w', 'w', 'w', 'w' , 'w', 'w','w','w','w'},
+    private char [][] level01 = {
+                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w','w','w'},
                                 {'w', 'w', 'w', 'h', ' ', ' ',  ' ' , ' ', 'w', 'w'},
                                 {'w', 'w', 'w', 'c', 'c' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'w', 'w', ' ', ' ' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'w', 'w', ' ', 'w' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'w', 'w', ' ', 'w' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'w', 'w', 'd', 'w' , 'd', ' ',' ', 'w' , 'w'},
-                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}};
+                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}
+    };
     
-      private char [][] level02 = {{'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'},
+      private char [][] level02 = {
+                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'},
                                 {'w', 'h', ' ', ' ', ' ' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'c', 'c', ' ', ' ' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', ' ', 'c', 'w', 'd' , 'w', ' ',' ','w' , 'w'},
                                 {'w', ' ', ' ',  ' ', 'w' , 'd', 'w','w', 'w' , 'w'},
                                 {'w', ' ', ' ', ' ', ' ' , ' ', ' ',' ', 'w' , 'w'},
                                 {'w', 'd', ' ', ' ', ' ' , ' ', ' ',' ', 'w' , 'w'},
-                                {'w','w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}};
+                                {'w','w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}
+      };
       
-      private char [][] level03 = {{'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'},
+      private char [][] level03 = {
+                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'},
                                 {'w', 'h', 'd', 'd', ' ' , ' ', ' ',' ', ' ' , 'w'},
                                 {'w', ' ', ' ', ' ', ' ' , ' ', 'w',' ', ' ' , 'w'},
                                 {'w', ' ', ' ', ' ', ' ' , ' ', 'w','c', ' ' , 'w'},
                                 {'w', ' ', ' ', ' ', ' ' , ' ', 'w',' ', ' ' , 'w'},
                                 {'w', ' ', ' ', ' ', ' ' , ' ', 'c','c', ' ' , 'w'},
                                 {'w', 'd', 'w', ' ', ' ' , ' ', ' ',' ', ' ' , 'w'},
-                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}};   
+                                {'w', 'w', 'w', 'w', 'w' , 'w', 'w','w', 'w' , 'w'}
+      };   
     
     public GameSkeleton()
     {
@@ -58,7 +64,7 @@ public class GameSkeleton extends JPanel{
     
     public void loadlevel(int level)
     {
-        // 
+        // load current level
         char [][] curLevel = new char [ROWS][COLS] ;
         if (level == 01)
             curLevel = level01;
